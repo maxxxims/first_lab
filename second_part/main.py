@@ -41,7 +41,7 @@ def animate(i):
         ax.set_title('Frame ' + str(i + 1))
         ax.plot(x[i], y[i])
     else:
-        ax.set_title('Frame ' + str(2*len(x) - i + 1))
+        ax.set_title('Frame ' + str(2*len(x) - i))
         ax.plot(x[len(x) - i - 1], y[len(x) - i -1])
 
 
