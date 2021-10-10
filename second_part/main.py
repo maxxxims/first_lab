@@ -24,9 +24,9 @@ for file_name in files:
             step += 1
 
         y_max = max(y_)*1.1
-        x_max = max(x_)*1.1
+        x_max = max(x_)
         y_min = min(y_)*1.1
-        x_min = min(x_)*1.1
+        x_min = min(x_)
         print(x_min, x_max, y_min, y_max)
 
 
