@@ -44,6 +44,7 @@ def animate(i):
         ax.set_title('Frame ' + str(2*len(x) - i))
         ax.plot(x[len(x) - i - 1], y[len(x) - i -1])
 
+frames_number = 2*len(x)
 
-result = animation.FuncAnimation(fig, animate)
+result = animation.FuncAnimation(fig, animate, frames=frames_number)
 result.save('animation.gif', writer='imagemagick', fps=GIF_FPS)
