@@ -15,8 +15,12 @@ def do_first_task(files):
         R_max = max(max(x), max(y))
         R_min = min(min(x), min(y))
         plt.scatter(x,y, s=7, marker="D", c='yellow', linewidths=1, edgecolors='red', alpha=0.8)
-        plt.ylim([R_min - 10, R_max + 10])
-        plt.xlim([R_min - 10, R_max +10])
+        plt.gca().set_aspect('equal', adjustable='box')
+
+        #plt.ylim([R_min - 10, R_max + 10])
+        #plt.xlim([R_min - 10, R_max +10])
+
+
         #plt.ylim([min(y), max(y)])
         #plt.xlim([min(x), max(x)])
         #plt.axis('equal')
